@@ -1,0 +1,20 @@
+/*
+Theme Name: Adote um Lobinho
+Author: Giovana Beltrame
+Description: reestruturando projeto final para wordpress
+Version: 1
+*/
+
+@import "css/reset.css";
+@import "css/styleHomePage.css";
+@import "css/styleListaLobinhos.css";
+@import "css/styleQuemSomos.css";
+@import "css/styleAdoteLobinho.css";
+@import "css/styleAddLobinho.css";
+@import "css/styleShowLobinho.css";
+
+
+
+
+
+
