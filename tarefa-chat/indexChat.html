@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tarefa Chat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleChat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Tarefa Chat</title>
+</head>
+<body>
+    <div class="layout">
+        <h1 id="historico">Histórico de Mensagens</h1>
+        <div class="box">
+            <div class="newMsg">
+                <!-- espaço criado dinamicamente para mensagem enviada -->
+                <!-- <div class="mensagem">
+                    <textarea id="msg"></textarea>
+                    <div class="buttons">   QUANDO O EDITAR É CLICADO ESSA PARTE É APAGADA E SUBSTITUIDA POR *
+                        <button onclick='editar()' type="button" class="edit">Editar</button>
+                        <button onclick='excluir()'' type="button" class="exclui">Excluir</button>
+                    </div>
+                    * espaço criado dinamicamente para mensagem editada
+                    < div class='msgEdit'>
+                        <textarea class='txtEdit'>< /textarea>
+                        < button class='enviarEdit' type='button' onclick='editMensagem()'>Enviar</button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="envio">
+                <textarea id="msgEnvio" type="text" name="Mensagem" cols="1" rows="50" placeholder="Digite a mensagem ..."></textarea>
+                <button onclick ="addMsg()" type="button"  class="send">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="Chat.js"></script>
+</body>
+</html>

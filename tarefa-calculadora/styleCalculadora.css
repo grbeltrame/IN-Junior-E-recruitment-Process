@@ -1,0 +1,76 @@
+/* RESET */
+*{margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;}
+
+/* ESTILIZAÇÃO BASE */
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+.calc {
+    text-align: center;
+    padding: 2rem;
+}
+#title {
+    color:white;
+    font-size: 2rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+    width: 450px;
+    height: 450px;
+    padding: 2rem;
+    margin-top: 10px;
+    box-shadow: 0 0  1em black;
+}
+
+#acmlNotas {
+    overflow-y: scroll ;
+    height: 200px;
+    width: 350px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inpt{
+    display: flex; 
+    margin-bottom: 10px;
+}
+
+.inpt p{
+    padding-right: 5px;
+    font-weight:500;
+    margin-right: 3px;
+}
+
+.inpt input:focus {
+    box-shadow:  inset 0 0  5px blue, 0 0  5px blue;
+    outline: 0;
+    border:2px;
+}
+
+
+.inpt button {
+    margin-left: 10px;
+}
+
+.result {
+    margin-top: 15px;
+    align-self: flex-start;
+    display: inline-block;
+}
+
+.result button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

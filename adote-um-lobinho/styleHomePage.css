@@ -1,0 +1,423 @@
+/* RESET */
+*{margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+/* ESTILIZAÇÃO HEADER */
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #85CDF5;
+}
+
+.contentHeader {
+    display: flex;
+    flex-direction: row;
+    background-color: #85CDF5;
+    align-items: center;
+    gap: 30rem;
+    justify-content: center;
+}
+
+.desenhoLobinho { 
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15.67%;
+    bottom: 8.17%;
+}
+
+.contentHeader a {
+    position: relative;  
+    text-decoration: none; 
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #333333;
+}
+
+.contentHeader a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.contentHeader a:hover::before {
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/* ESTILIZAÇÃO PARTE INICIAL */
+
+.pageName {
+    background-image: url("images/loboHeader.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 550px;
+}
+
+.pgNameTxt {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.titlePgName {
+    font-size: 70px;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 130px;
+    text-align: center;   
+}
+
+.pgNameDivsor {   
+    border: solid;
+    width: 99px;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.pgNameDescription {
+    width: 80%;
+    padding-left: 20%;
+    font-size: 20px;
+    font-family: 'Darker Grotesque';
+}
+
+/* ESTILIZAÇÃO ABOUT */
+
+.about {
+    display:block;
+    align-content: center;
+    background-color: #2C5680;
+    text-align: center;
+    padding: 40px;   
+}
+
+.titleAbout {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 15px;   
+    color: #DEB959;
+}
+
+.aboutTxt {
+    text-align: center;
+    color:#FFFFFF;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;   
+}
+
+/* ESTILIZAÇÃO VALORES */
+
+.values {
+    display: block;   
+    padding: 30px;
+    background-color: #333333 ;
+}
+
+.valuesTitle {
+    text-align: center;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 15px;   
+    color: #DEB959;
+}
+
+.valuesEX {
+    display: flex;
+    color:#FFFFFF;
+    text-align: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:3rem;   
+}
+
+.valuesOne, .valuesTwo, .valuesThree, .valuesFour {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.protectionTitle, .careTitle, .compTitle, .rescueTitle {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #FFFFFF;   
+}
+
+.protectionTxt, .careTxt, .compTxt, .rescueTxt {
+    max-width: 50%;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;   
+}
+
+.circulo {
+    border-radius: 50% ;
+    background-color: #FFFFFF;
+}
+
+.protectionImg, .careImg, .compImg, .rescueImg  {
+    display: block;
+    margin: 24px;
+    width: 139px;
+    height: 139px;
+}
+
+/*  ESTILIZAÇÃO LOBO EXEMPLO */
+
+.sampleSection {
+    display: block;
+}
+
+.sampleTitle {
+    text-align: center;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    margin-bottom: 15px;   
+    color: #DEB959;
+}
+
+.sampleConainer {
+    display: block;
+}
+
+.wolfOne{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 4rem;
+}
+
+.wolfOneImg {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    box-shadow: -30px -30px #2C5680;   
+}
+
+.wolfTwo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
+    gap: 4rem;
+}
+
+.wolfTwoImg {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    box-shadow: 30px -30px #2C5680;    
+}
+
+.wolfOneInfo {
+    width: 461px;
+    height: 339px;
+    position: relative;
+}
+
+.wolfTwoInfo {
+    text-align: right;
+    width: 461px;
+    height: 339px;
+    position: relative;
+}
+
+.wolfOneTitle, .wolfTwoTitle {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000000;
+}
+
+.wolfOneAge, .wolfTwoAge {
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.wolfOneTxt, .wolfTwoTxt {  
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 20px;
+    color: #000000;
+}
+
+/*  ESTILIZAÇÃO FOOTER */
+
+.footerDivsor {
+    height: 6px;
+    background: linear-gradient(270deg, #2C5680 0%, #DEB959 100%)
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    height: 30vh;
+}
+
+.rodapeContainer {
+    display: flex;
+    width: 70%;
+    height: 80%;
+    flex-direction: row;
+    background-color: #333333;
+}
+
+.maps {
+    width: 20%;
+    height: 100%;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    padding: 20px;
+}
+
+.contato img {
+    padding: 5px;
+}
+
+.contato button {
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 30px;
+    background-color: #DEB959;
+    margin-left: 7px;
+    border: none;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+    color: #353535;
+}
+
+.contato a {
+    color:#333333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.adress, .number, .email {
+    display: flex;
+    color: #FFFFFF;
+    padding: 3px;
+    align-items: flex-start;
+    font-family: 'Darker Grotesque';
+    font-style: normal;
+}
+
+.legendaLogo {
+    width: 150%;
+    margin-left: -10%;
+}
+
+.logoImg {
+    margin-top: 10%;
+}
+
+.logoRodape  {
+    align-self: left;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin-left: 22%;
+    margin-top: 1%;
+}
+
+/* Comentários durante a realização do projeto */
+
+/* Giovana: estou com dificuldade de alinhar os itens nas posições corretas*/
+/* Giovana:ão tem nada alinhando */

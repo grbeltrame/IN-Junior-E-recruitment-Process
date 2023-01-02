@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tarefa Calculadora">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styleCalculadora.css">
+    <title>Calculadora de Médias</title>
+</head>
+<body>
+    <div class="calc">
+        <h1 id="title">Média das Notas dos Alunos</h1>
+        <div class="box">
+            <div class="inpt">
+                <p id="gradeTxt">Nota:</p>
+                <input id="gradesInpt" type="text" name="Nota">
+                <button onclick = "adicionar()" id="btn">Adicionar</button>                
+            </div>
+            <textarea id="acmlNotas"></textarea>
+            <div class="result">
+                <button onclick ="addMedia()" id="calcMedia">Calcular Média</button>
+                <p id="resultTxt">A média é:</p>
+            </div>
+        </div>
+    </div>
+    <script src="Calculadora.js"></script>
+</body>
+</html>
